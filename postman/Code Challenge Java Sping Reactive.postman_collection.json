@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "a11f4598-7441-4a00-a322-76594ed74117",
+		"name": "Code Challenge Java Sping Reactive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1502785"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/v1/api/clients Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/v1/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/v1/api/clients Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"name\": \"Bruce\",\n    \"lastname\": \"Wayne\",\n    \"identification\": \"1234567890\",\n    \"country\": \"USA\",\n    \"nationality\": \"USA\",\n    \"address\": \"Gotham City\",\n    \"phone\": \"+1890987234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/v1/api/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
