@@ -22,9 +22,8 @@ public class clientController {
         return clientService.findAll();
     }
 
-    @PostMapping
-    public ResponseEntity<Mono<Client>> create(@RequestBody Client client) {
-        var result = clientService.create(client);
-        return ResponseEntity.ok(result);
+    @PostMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Mono<Client> create(@RequestBody Client client) {
+        return clientService.create(client);
     }
 }
